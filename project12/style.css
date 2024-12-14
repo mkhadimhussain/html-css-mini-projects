@@ -1,0 +1,54 @@
+body {
+    background: #ddd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box:hover .box-content {
+    transform: rotateY(180deg);
+    /* transform: rotateX(180deg); */
+}
+
+.box-content {
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.box-front, .box-back {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    color: #ddd;
+    backface-visibility: hidden;
+}
+
+.box-front p {
+    font-size: 50px;
+    text-align: center;
+}
+
+.box-front h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.box-front {
+    background: #2b9cab;
+}
+
+.box-back {
+    background: #266662;
+    transform: rotateY(180deg);
+    /* transform: rotateX(180deg); */
+}

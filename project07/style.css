@@ -1,0 +1,89 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url('images/bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+    background-position: 0px;
+    animation: bgmove 5s linear infinite;
+}
+
+@keyframes bgmove {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: 5000px;
+    }
+}
+
+.car {
+    position: absolute;
+    bottom: 4%;
+    right: 0%;
+    /* following code make the image original size which shows the large size car */
+    /* width: 860px; */
+    /* height: 311px; */
+    /* background: url('car.png'); */
+
+    animation: car 5s linear infinite;
+}
+
+@keyframes car {
+    0% {
+        right: -10%;
+    }
+    40% {
+        right: 60%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+.tyre {
+    width: 79px;
+    height: 79px;
+    border-radius: 50%;
+    background: black;
+    animation: tyre 5s linear infinite;
+}
+
+@keyframes tyre {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.left {
+    position: absolute;
+    top: 52%;
+    left: 10%;
+}
+
+.right {
+    position: absolute;
+    top: 52%;
+    right: 16%;
+}
+
+.rim {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px silver dotted;    
+}
+

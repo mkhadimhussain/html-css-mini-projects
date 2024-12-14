@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(235, 235, 235);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+.cards {
+    width: 400px;
+    height: 400px;
+    background-image: url('images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0, 0, 10px rgba(0, 0, 0, 0.1);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.card img {
+    position: relative;
+    left: 110px;
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card:nth-child(1) {
+    position: absolute;
+    z-index: 3;
+}
+
+.card:nth-child(2) {
+    z-index: 2;
+}
+
+.card:nth-child(3) {
+    position: absolute;
+    z-index: 1;
+}
+
+.cards {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    transition: all 1s;
+}
+
+.cards:hover .card:nth-child(1) {
+    animation: reveal-left 1s forwards ease-in-out;
+}
+
+.cards:hover .card:nth-child(2) {
+    animation: reveal 1s forwards ease-in;
+}
+
+.cards:hover .card:nth-child(3) {
+    animation: reveal-right 1s forwards ease-in-out;
+}
+
+@keyframes reveal {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes reveal-left {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+    50% {
+        transform: scale(1.2) translate(-200px, 0);
+    }
+    100% {
+        transform: scale(1) translate(-400px, 0);
+    }
+}
+
+@keyframes reveal-right {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+    50% {
+        transform: scale(1.2) translate(200px, 0);
+    }
+    100% {
+        transform: scale(1) translate(400px, 0);
+    }
+}

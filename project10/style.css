@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+    transform: scale(1.5);
+}
+
+/* button */
+.btn {
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+}
+
+.btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.btn::before {
+    content: "";
+    background: linear-gradient(45deg, #f00, orange, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+    -webkit-animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* hover */
+.btn:hover::before {
+    opacity: 1;
+}
+
+.btn:active:after {
+    background: transparent;
+}
+
+.btn:active {
+    color: #000;
+    font-weight: bold;
+}

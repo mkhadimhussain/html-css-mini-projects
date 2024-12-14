@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ddd;
+    padding-top: 50px;
+}
+
+.title {
+    width: 300px;
+    color: #636e72;
+    font-size: 45px;
+    margin: auto;
+}
+
+.btn-container {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+.btn {
+    display: flex;
+    width: 150px;
+    margin: 25px auto;
+    justify-content: center;
+    padding: 15px 25px;
+    font-size: 25px;
+    border: none;
+    box-shadow: 0px 0px 5px gray;
+    border-radius: 5px;
+    color: #ddd;
+}
+
+.shake {
+    background: #303030;
+}
+.shake:hover {
+    animation: shake .25s ease-out;
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(20px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    75% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.bounce {
+    background: #27ae60;
+}
+.bounce:hover {
+    animation: bounce .25s ease-out;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.flash {
+    background: #2c3e50;
+}
+.flash:hover {
+    animation: flash 0.5s ease-out;
+}
+@keyframes flash {
+    0% {
+        opacity: 0;        
+    }
+    25% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.scale {
+    background: #e6373a;
+}
+.scale:hover {
+    animation: scale 0.5s ease-out;
+}
+@keyframes scale {
+    0%{
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1.5, 1.5);
+    }
+    50% {
+        transform: scale(0.5, 0.5);
+    }
+    75% {
+        transform: scale(1.5, 1.5);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.swing {
+    background: #16a085;
+}
+.swing:hover {
+    animation: swing 0.5s ease-out;
+}
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

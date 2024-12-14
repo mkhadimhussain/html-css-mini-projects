@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background: linear-gradient(45deg, red,  blue);
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 3em;
+    height: 320px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 20px 20px 48px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form p {
+    font-weight: 500;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 2.4rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+form a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 12px;      
+}
+
+form a:hover {
+    text-shadow: 2px 2px 6px #00000840;
+}
+
+form a:active {
+    text-shadow: none;
+}
+
+form input {
+    background: transparent;
+    width: 200px;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: none;
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    border-radius: 5000px;
+    -webkit-border-radius: 5000px;
+    -moz-border-radius: 5000px;
+    -ms-border-radius: 5000px;
+    -o-border-radius: 5000px;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+form input:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+}
+
+form input[type=email]:focus, form input[type=password]:focus {
+    color: #fff;
+    border: none;
+    outline: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 4px 60px 8px rgba(255, 255, 255, 0.2);
+}
+
+form input[type=button] {
+    margin-top: 10px;
+    width: 150px;
+    font-size: 1rem;
+}
+
+form input[type=button]:hover {
+    cursor: pointer;
+}
+
+form:hover {
+    margin: 4px;
+}
+
+::placeholder {
+    color: #fff;
+    font-weight: 400;
+}
+
+.drop {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 4px 4px 60px -8px rgba(255, 255, 255, 0.2);
+    position: absolute;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    z-index: -1;
+}
+
+.drop-1 {
+    height: 80px;
+    width: 80px;
+    top: -20px;
+    left: -40px;
+}
+
+.drop-2 {
+    height: 80px;
+    width: 80px;
+    bottom: -30px;
+    right: -10px;
+}
+
+.drop-3 {
+    height: 100px;
+    width: 100px;
+    bottom: 120px;
+    right: -50px;
+}
+
+.drop-4 {
+    height: 120px;
+    width: 120px;
+    top: -60px;
+    right: -60px;
+}
+
+.drop-5 {
+    height: 60px;
+    width: 60px;
+    bottom: 170px;
+    left: 90px;
+}
